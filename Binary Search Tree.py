@@ -2,11 +2,7 @@
 # coding: utf-8
 
 # # BST without duplicates
-
-# In[ ]:
-
-
-class BST:
+class BST_without_duplicates:
     def __init__(self, data):
         self.data = data
         self.left = None
@@ -72,19 +68,15 @@ class BST:
 
         return self
 
-def build_tree(vector):
-    temp = BST(vector[0])
+def build_tree_WOD(vector):
+    temp = BST_without_duplicates(vector[0])
     for index in range(1,len(vector)):
         temp.add_child(vector[index])
     return temp
 
 
 # # BST with duplicates
-
-# In[19]:
-
-
-class BST:
+class BST_with_duplicates:
     def __init__(self,data):
         self.data = data
         self.right = None
@@ -119,22 +111,6 @@ class BST:
             elements += self.right.sort_elements()
 
         return elements
-    
-#     def count_duplicate(self, data):
-#         if data < self.data:
-#             return self.left.count_duplicate(data)
-#         elif data > self.data:
-#             return self.right.count_duplicate(data)
-#         else:
-#             count = 0
-#             if self.middle is None:
-#                 return count
-#             else:
-#                 while self.middle:
-#                     print(count)
-#                     count += 1
-#                     self = self.middle
-#                 return count
             
     def count_duplicate(self):
         count = 0
@@ -194,22 +170,21 @@ class BST:
                 
                 
 
-def build_tree(vector):
-    temp = BST(vector[0])
+def build_tree_WD(vector):
+    temp = BST_with_duplicates(vector[0])
     for index in range(1,len(vector)):
         temp.add_child(vector[index])
     return temp
 
 
-# In[20]:
-
+if __name__ == '__main__':
 
 import random
 # del T
 random.seed(10)
 A = random.choices(list(range(-10,10)),k=40)
 print(A)
-T = build_tree(A)
+T = build_tree_WD(A)
 print(T.sort_elements())
 T.delete(3)
 print(T.sort_elements())
