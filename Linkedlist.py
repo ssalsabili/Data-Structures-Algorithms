@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 # # Linked list
 class Node:
     def __init__(self, data = None, next_element = None):

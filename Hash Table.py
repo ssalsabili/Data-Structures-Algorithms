@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 # # Hash Table
 class HashTable:  
     def __init__(self):
@@ -61,4 +58,3 @@ class HashTable_with_collision:
 
 if __name__ == '__main__':
 
-    
