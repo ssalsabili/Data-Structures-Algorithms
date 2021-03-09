@@ -2,10 +2,6 @@
 # coding: utf-8
 
 # # Hash Table
-
-# In[ ]:
-
-
 class HashTable:  
     def __init__(self):
         self.MAX = 10
@@ -26,18 +22,8 @@ class HashTable:
         self.arr[h] = val
 
 
-# In[2]:
-
-
-[1 for i in range(10)]
-
-
 # # Hash Table Collision Handling Using Chaining
-
-# In[ ]:
-
-
-class HashTable:  
+class HashTable_with_collision:  
     def __init__(self):
         self.MAX = 10
         self.arr = [[] for i in range(self.MAX)]
@@ -72,62 +58,7 @@ class HashTable:
                 del self.arr[arr_index][index]
 
 
-# In[ ]:
 
+if __name__ == '__main__':
 
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
+    
