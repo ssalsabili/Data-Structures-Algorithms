@@ -1,7 +1,7 @@
-# Demo
+# The Implementation of Main Data Structures & Algorithms
 
-Hello world
+This repository includes the following DS implementations:
+1. Binary Search Tree
+2. Linked List
+3. Hash Table
 
-## Wow this time
-
-hello Sina, you can do it!
